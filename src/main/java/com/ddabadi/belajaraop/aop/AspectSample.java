@@ -16,6 +16,7 @@ import org.springframework.stereotype.Component;
  */
 
 @Aspect
+@Component
 public class AspectSample {
 
     @Pointcut("within(com.ddabadi.belajaraop.trans.BarangService) ")
