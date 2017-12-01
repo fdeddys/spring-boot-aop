@@ -1,5 +1,6 @@
 package com.ddabadi.belajaraop.trans;
 
+import com.ddabadi.belajaraop.aop.LoggInfo;
 import com.ddabadi.belajaraop.domain.Barang;
 import org.springframework.stereotype.Service;
 
@@ -22,5 +23,10 @@ public class BarangService {
 
     public void setBarang(Barang barang) {
         this.barang = barang;
+    }
+
+    @LoggInfo
+    public Barang getBarangLagi(){
+        return getBarang();
     }
 }

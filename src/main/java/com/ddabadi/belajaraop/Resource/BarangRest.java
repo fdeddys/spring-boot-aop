@@ -23,4 +23,5 @@ public class BarangRest {
         return barangService.getBarang();
     }
 
+
 }
